@@ -32,7 +32,8 @@ while ischar(line)
     line = fgetl(f);
 end
 
+fclose(f);
+
 fprintf('Part 1: %d\n', part1);
 fprintf('Part 2: %d\n', part2);
 
-fclose(f);
