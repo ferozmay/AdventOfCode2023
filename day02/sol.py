@@ -23,5 +23,5 @@ for l in data:
     if poss:
         p1 += int(game_id.split()[-1])
 
-print(p1)
-print(p2)
+print("Part 1:", p1)
+print("Part 2:", p2)
