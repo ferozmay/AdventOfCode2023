@@ -19,7 +19,7 @@ for ((i=0; i<${#times[@]}; i++)); do
     ((p1 *= wins))
 done
 
-# Part 2 (Cannot brute force take difference quadratic roots)
+# Part 2 (Cannot brute force so take difference quadratic roots)
 t=`echo ${times[*]} | tr -d " "`
 d=`echo ${dist[*]} | tr -d " "`
 r1=$(bc -l <<< "scale=0; ($t + sqrt($t^2 - 4 * $d))/2")
